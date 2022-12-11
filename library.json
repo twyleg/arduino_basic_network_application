@@ -1,0 +1,28 @@
+{
+  "name": "arduino_basic_network_application",
+  "version": "1.0.0",
+  "description": "Basic network application framework that provides standard functionality for arduino applications and reduces boilerplate code.",
+  "keywords": "network, arduino, boilerplate",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/twyleg/arduino_basic_network_application"
+  },
+  "authors":
+  [
+    {
+      "name": "Torsten Wylegala",
+      "email": "mail@twyleg.de",
+      "url": "https://github.com/twyleg"
+    }
+   ],
+  "license": "MIT",
+  "homepage": "https://github.com/twyleg/arduino_basic_network_application",
+  "dependencies": {
+    "sstaub/NTP": "@^1.6",
+    "contrem/arduino-timer": "@^2.3.1",
+    "bblanchon/ArduinoJson": "@^6.19.4"
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}
