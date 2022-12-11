@@ -1,6 +1,6 @@
 {
   "name": "arduino_basic_network_application",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Basic network application framework that provides standard functionality for arduino applications and reduces boilerplate code.",
   "keywords": "network, arduino, boilerplate",
   "repository":

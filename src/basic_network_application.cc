@@ -13,18 +13,18 @@ constexpr const int SERIAL_BAUD_RATE = 115200;
 
 int handleCli(CLIClient* dev, int argc, char** argv, void* ptr) {
 
-	NetworkApplication* networkApplication = reinterpret_cast<NetworkApplication*>(ptr);
+	BasicNetworkApplication* basicNetworkApplication = reinterpret_cast<BasicNetworkApplication*>(ptr);
 
 	if (IS_COMMAND("help")) {
-		return networkApplication->handleCliHelp(dev, argc, argv);
+		return basicNetworkApplication->handleCliHelp(dev, argc, argv);
 	}else if (IS_COMMAND("status")) {
-		return networkApplication->handleCliStatus(dev, argc, argv);
+		return basicNetworkApplication->handleCliStatus(dev, argc, argv);
 	}else if (IS_COMMAND("connect_wifi")) {
-		return networkApplication->handleCliConnectWifi(dev, argc, argv);
+		return basicNetworkApplication->handleCliConnectWifi(dev, argc, argv);
 	}else if(IS_COMMAND("config")) {
-		return networkApplication->handleCliConfig(dev, argc, argv);
+		return basicNetworkApplication->handleCliConfig(dev, argc, argv);
 	}else if(IS_COMMAND("config_set_parameter")) {
-		return networkApplication->handleCliConfigSetParameter(dev, argc, argv);
+		return basicNetworkApplication->handleCliConfigSetParameter(dev, argc, argv);
 	}
 
 	return -1;
