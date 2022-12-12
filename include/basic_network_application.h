@@ -29,11 +29,11 @@ private:
 
 	void readConfig();
 
-
-	WiFiUDP mWifiUdp;
 	WiFiUDP mNtpWifiUdp;
 	WiFiServer mWifiCliServer;
 	WiFiClient mWifiCliClient;
+
+protected:
 	NTP mNtp;
 	bool mNtpStarted;
 

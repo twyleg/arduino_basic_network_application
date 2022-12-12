@@ -1,6 +1,6 @@
 {
   "name": "arduino_basic_network_application",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Basic network application framework that provides standard functionality for arduino applications and reduces boilerplate code.",
   "keywords": "network, arduino, boilerplate",
   "repository":
@@ -24,5 +24,5 @@
     "bblanchon/ArduinoJson": "@^6.19.4"
   },
   "frameworks": "arduino",
-  "platforms": "espressif32"
+  "platforms": ["espressif32"]
 }
